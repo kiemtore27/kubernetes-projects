@@ -2,7 +2,7 @@ wget https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/re
 kubectl create -f dashboard.yaml
 kubectl apply -f dashboard.yaml
 kubectl delete -f dashboard.yaml
-
+kubectl get deploy -n kubernetes-dashboard
 kubectl get pods -n kubernetes-dashboard
 kubectl get svc -n kubernetes-dashboard
  open the port 30000 in aws SG and search https://workernodeip:30000 in the browser

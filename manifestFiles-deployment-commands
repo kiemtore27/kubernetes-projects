@@ -1,0 +1,13 @@
+#yaml file: manifest file, deployment,pod creation
+kubectl api-resources= Info
+vi/nano manifestfile.yml=to create manifest-file
+kubectl explain deployment= 5 fields: apiVersion, kind, metadata, spec, status.
+1./ kubectl explain deployment.apiVersion: to check the sub-fields
+2./ kubectl explain deployment.kind: to check the sub-fields
+3./ kubectl explain deployment.metadata: to check the sub-fields
+4./ kubectl explain deployment.spec: to check the sub-fields
+5./ kubectl explain deployment.status: to check the sub-fields
+kubeclt apply -f manifestfile.yml
+
+kubeclt describe pod
+kubectl get all
